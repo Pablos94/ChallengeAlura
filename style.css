@@ -217,6 +217,10 @@ button:disabled{
     margin: 0 0 32px;
 }
 
+#copiar:hover{
+    opacity: 0.5;
+}
+
 .hidden{
     display: none;
 }
