@@ -41,3 +41,11 @@ function desencriptar(textoParaDesencriptar){
     }
     return textoParaDesencriptar;
 }
+
+function copiarTexto(){
+    let copia = document.querySelector("input-text-area").value;
+
+    navigator.clipboard.writeText(copia)
+
+    alert ("el texto Fue copiado al portapapeles")
+}
