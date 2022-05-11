@@ -4,7 +4,7 @@
     background: #F3F5FC;
     font-family: "Inter" sans-serif;
     font-weight: 400;
-    font-size: 32px;
+    font-size: 20px;
     line-height: 150%;
 }
 
@@ -36,6 +36,7 @@ body{
 }
 
 img{
+    padding-top: 25px;
     max-width: 100%;
 }
 
@@ -103,7 +104,6 @@ button:disabled{
 
 .botones{
     display: flex;
-    flex-wrap: wrap;
     margin: 0 -12px;
 }
 
@@ -135,7 +135,7 @@ button:disabled{
 }
 
 .mensajeDeSalida{
-    display: flex;
+    display: inline-block;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -152,12 +152,16 @@ button:disabled{
     width: 100%;
     margin: auto;
     text-align: center;
+    background: white;
+    margin-left: 16px;
 }
 
 .sinMensajeDeSalida img{
     width: 100%;
+    margin-top: 80%;
     margin-bottom: 32px;
-    display: block
+    display: block;
+    background: white;
     
 }
 
@@ -178,6 +182,7 @@ button:disabled{
     order: 0;
     align-self: stretch;
     flex-grow: 0;
+    background: white;
 }
 
 .sinMensajeDeSalida p{
@@ -198,12 +203,15 @@ button:disabled{
     order: 1;
     align-self: stretch;
     flex-grow: 0;
+    background: white;
 }
 
 .mensajeDeSalidaInvisible{
     width: 100%;
     margin: auto;
     text-align: center;
+    display: inline-block;
+    background: white;
 }
 
 .mensajeDeSalidaInvisible textarea{
@@ -216,6 +224,11 @@ button:disabled{
     color: #495057;
     margin: 0 0 32px;
 }
+
+#copiar{
+    margin-top: 540px;
+}
+
 
 #copiar:hover{
     opacity: 0.5;
@@ -231,7 +244,7 @@ footer{
 }
 
 footer p{
-    margin-bottom: 15px;
+    padding-top: 30px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: bold;
