@@ -43,9 +43,9 @@ function desencriptar(textoParaDesencriptar){
 }
 
 function copiarTexto(){
-    let copia = document.querySelector("input-text-area").value;
+    let copia = document.querySelector(".input-text-area").value;
 
     navigator.clipboard.writeText(copia)
 
-    alert ("el texto Fue copiado al portapapeles")
+    return alert ("el texto Fue copiado al portapapeles")
 }
