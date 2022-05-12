@@ -34,6 +34,8 @@ function encriptar(textoParaEncriptar){
 function desencriptar(textoParaDesencriptar){
     let matrizCodigo =  [["e","enter"],["i","imes"],["a","ai"],["o","ober"],["u","ufat"]]
     textoParaDesencriptar = textoParaDesencriptar.toLowerCase();
+    let ocultarImagen = document.querySelector("#noTieneTexto");
+    let mostrarTexto = document.querySelector("#tieneTexto");
     for (let i=0; i<matrizCodigo.length ;i++){
         if(textoParaDesencriptar.includes(matrizCodigo[i][1])){
             textoParaDesencriptar = textoParaDesencriptar.replaceAll(matrizCodigo[i][1],matrizCodigo[i][0])
