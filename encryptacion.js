@@ -39,6 +39,10 @@ function desencriptar(textoParaDesencriptar){
             textoParaDesencriptar = textoParaDesencriptar.replaceAll(matrizCodigo[i][1],matrizCodigo[i][0])
         }
     }
+
+    ocultarImagen.classList.add("hidden");
+    mostrarTexto.classList.remove("hidden");
+
     return textoParaDesencriptar;
 }
 
